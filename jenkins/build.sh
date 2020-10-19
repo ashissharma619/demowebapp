@@ -1,1 +1,3 @@
-echo 1
+#!/bin/bash
+
+echo -e "\n Building from shell... \n"
