@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh 'jenkin/build.sh'
+        sh 'jenkins/build.sh'
       }
     }
 
