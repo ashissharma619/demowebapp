@@ -4,8 +4,11 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        chmod +x ./jenkins/build.sh
-        sh 'jenkins/build.sh'
+        NAME=Ashis
+        LASTNAME=Sharma
+        echo $(pwd)
+        echo "Hello, $NAME. Current date is $(date)" > /c/JenkinsTest/test.txt
+        /c/JenkinsTest/file1.sh $NAME $LASTNAME
       }
     }
 
